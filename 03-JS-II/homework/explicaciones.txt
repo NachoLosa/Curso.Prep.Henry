@@ -1,0 +1,10 @@
+'for'           se usa para generar un "bucle" es decir una porcion de codigo que se repite las veces que sea necesario
+                hasta cumplir con una condicion que se le asigne.
+
+'&&' 'Y, AND'   Este operador evalua dos expresiones, y en el caso de que ambas sean 'TRUE', devuelve TRUE
+                y si alguna de las dos es 'FALSE' devuelve FALSE
+
+'||' 'O, OR'    Evalua dos expresiones y siempre que una de las dos sea 'TRUE' devolvera 'TRUE'
+                En el unico caso que devuelve 'FALSE' es cuando ambas expresiones son 'FALSE'
+
+'!' 'NO, NOT'   Devuelve el valor booleano opuesto al que se le pasa. En el caso de que la expresion sea 'TRUE' devolvera 'FALSE'
