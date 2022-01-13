@@ -1,0 +1,1 @@
+* Array     Un array es una lista ordenada de elementos que pueden ir desde un string hasta una funcion o mismo otro array
