@@ -1,0 +1,5 @@
+*Prototype    --    Es la forma que tienen las "clases" de establecer un metodo (conjunto de propiedades, funciones) y asi 
+                    darle acceso a todos los objetos de esa clase a esos metodos. Cada clase tiene una propiedad "Prototype" que luego se establece en "metodos"
+
+*_Constructor_      Es un metodo para crear e inicializar un objeto a partir de una clase, este mismo sirve para definir 
+                    objetos y sus caracteristicas, permitiendo asi poder crear gran cantidad de objetos de manera efectiva adjuntando datos y funciones a ellos segun sea necesario.
