@@ -1,0 +1,2 @@
+*Callbacks      --      Es la capacidad de pasar una funcion como argumento a otra funcion, es decir que permite llamar a
+                        una funcion determinada declarandola dentro de otra
