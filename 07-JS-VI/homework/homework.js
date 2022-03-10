@@ -4,20 +4,25 @@ function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
-  return nombre[0].toUpperCase() + nombre.slice(1)
+  
+  return nombre.charAt(0).toUpperCase() + nombre.slice(1);
+
 }
 
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   //Tu código:
-  cb()
+  
+  cb();
 }
 
 function operacionMatematica(n1, n2, cb) {
   //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
-  return cb(n1,n2)
+  
+  return cb(n1, n2);
+
 }
 
 function sumarArray(numeros, cb) {
@@ -25,17 +30,12 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-   /*let suma = 0
-   for(i = 0; i < numeros.length; i++){
-     suma = suma + numeros[i]
-   }
-   cb(suma)*///Opcion "FOR"
-
-   //Opcion "REDUCE"
-   let suma = numeros.reduce(function(acc, valAct){
+   
+  var suma = numeros.reduce(function(acc, valAct){
     return acc + valAct
-   })
-   cb(suma)
+  })
+  return cb(suma)
+   
 }
 
 function forEach(array, cb) {
@@ -43,14 +43,12 @@ function forEach(array, cb) {
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
 
-  for(let i = 0; i < array.length; i++){
-    cb(array[i]);
-  }
-  /*
-  array.forEach(function(e){
-    cb(e)
+  array.forEach(function(elemento){
+
+   cb(elemento);
+
   })
-  */
+
 }
 
 function map(array, cb) {
@@ -59,18 +57,25 @@ function map(array, cb) {
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
   
-  let newArray = array.map(function(e){
-    return cb(e)
+  var newArray = array.map(function(elemento){
+    return cb(elemento)
   })
   return newArray;
 
+  
 }
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  return array.filter(e=> e[0] === "a")
+  
+  var newArray = array.filter(function(elemento){
+    return elemento[0] === 'a';
+  })
+  
+  return newArray;
+
 }
 
 // No modificar nada debajo de esta línea
